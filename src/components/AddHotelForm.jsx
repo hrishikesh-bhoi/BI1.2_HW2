@@ -39,7 +39,7 @@ const handleChange = (e) => {
         event.preventDefault();
         try {
 
-            const response = await fetch(`https://be-4-4-hw-2-delta.vercel.app/hotels`, {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/hotels`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
